@@ -28,23 +28,26 @@ public class GestisciStudenti {
     */
 
     //CalcolaMedia
-    public static int calcolaMedia(ArrayList<Integer> voti){
-        int sum = 0;
+    public static float calcolaMedia(ArrayList<Integer> voti){
+        float sum = 0;
         for (Integer i: voti) {
             sum += i;
         }
-        return sum/voti.size();
+        float avg = sum/voti.size();
+        return avg;
     }
+
     //Trova Numero Massimo
-    public static int TrovaMax(ArrayList<Integer> voti){
-        int max = voti.get(0);
-        for (Integer i: voti) {
+    public static int TrovaMax(ArrayList<Integer> a){
+        int max = a.get(0);
+        for (Integer i: a) {
             if (i>max){
                 max = i;
             }
         }
         return max;
     }
+
     //Trova Numero Minimo
     public static int TrovaMin(ArrayList<Integer> voti){
         int min = voti.get(0);
@@ -55,9 +58,10 @@ public class GestisciStudenti {
         }
         return min;
     }
+
     //Controlla Promozione
     public static boolean VerificaPromozione(ArrayList<Integer> voti){
-        int media = calcolaMedia(voti);
+        float media = calcolaMedia(voti);
         if(media>=6){
             System.out.println("Promosso");
             return true;
@@ -67,7 +71,6 @@ public class GestisciStudenti {
             return false;
         }
     }
-
 
 
     public static void main(String[] args) {
