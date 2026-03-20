@@ -1,3 +1,5 @@
+package Giornate_Corso.Giovedi19;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

@@ -1,3 +1,5 @@
+package Giornate_Corso.Giovedi19;
+
 public class EsercizioFunzione {
 
     //Funzione fattoriale
