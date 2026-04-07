@@ -39,6 +39,8 @@ public class Main {
                     
                     break;
                 case 6:
+                    System.out.println("Ecco il nome dei contenuti disponibili.");
+                    arc.
                     
                     break;
                 case 7:
